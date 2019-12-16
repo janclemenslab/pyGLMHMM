@@ -4,11 +4,10 @@ A scikit-learn estimator which fits a combination of Multinomial Generalized Lin
 This repository is the Python translation of most of the MATLAB code which was provided here (https://github.com/murthylab/GLMHMM) implemented the GLMHMM. It is written in a way to maximally fit the object-oriented framework of scikit-learn estimator API while being faithful to the original implementation of the MATLAB code, so the cross-communication between the two kinds of codes would be possible in future.
 
 Here are the descriptions of the two main files of this repository:
-
 1) _glm_hmm: is the main program which implements the GLMHMMEstimator class with a few main methods and also all other relevant functions.
 2) plot_glm_hmm: which generates an instance of GLMHMMEstimator object with initial parameters and runs the "fit" method of the object on a random sample data to provide the results. So to test the _glm_hmm code, you should run this code with your prefered initial parameters and input data.
 
-References
+References:
 1) Calhoun, A.J., Pillow, J.W. & Murthy, M. Unsupervised identification of the internal states that shape natural behavior. Nat Neurosci 22, 2040–2049 (2019).
 2) Escola, S., Fontanini, A., Katz, D. & Paninski, L. Hidden Markov models for the stimulus-response relationships of multistate neural systems. Neural Comput 23, 1071–1132 (2011).
 
