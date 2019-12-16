@@ -5,8 +5,12 @@ This repository is the Python translation of most of the MATLAB code which was p
 
 Here are the descriptions of the two main files of this repository:
 
-1) _glm_hmm: is the main program which implements the GLMHMMEstimator class with a few main methods and also all other relevant functions.
-2) plot_glm_hmm: which generates an instance of GLMHMMEstimator object with initial parameters and runs the "fit" method of the object on a random sample data to provide the results. So to test the _glm_hmm code, you should run this code with your prefered initial parameters and input data.
+[1] _glm_hmm: is the main program which implements the GLMHMMEstimator class with a few main methods and also all other relevant functions.
+[2] plot_glm_hmm: which generates an instance of GLMHMMEstimator object with initial parameters and runs the "fit" method of the object on a random sample data to provide the results. So to test the _glm_hmm code, you should run this code with your prefered initial parameters and input data.
+
+References
+[1] Calhoun, A.J., Pillow, J.W. & Murthy, M. Unsupervised identification of the internal states that shape natural behavior. Nat Neurosci 22, 2040–2049 (2019).
+[2] Escola, S., Fontanini, A., Katz, D. & Paninski, L. Hidden Markov models for the stimulus-response relationships of multistate neural systems. Neural Comput 23, 1071–1132 (2011).
 
 This is the overal structure of the variables of the GLMHMMEstimator class:
 
@@ -95,8 +99,3 @@ This is the overal structure of the variables of the GLMHMMEstimator class:
     n_iter_ : int
         Number of step used by the best fit of inference to reach the
         convergence.
-    
-    References
-    ----------
-    .. [1] Calhoun, A.J., Pillow, J.W. & Murthy, M. Unsupervised identification of the internal states that shape natural behavior. Nat        Neurosci 22, 2040–2049 (2019).
-    .. [2] Escola, S., Fontanini, A., Katz, D. & Paninski, L. Hidden Markov models for the stimulus-response relationships of multistate        neural systems. Neural Comput 23, 1071–1132 (2011).
