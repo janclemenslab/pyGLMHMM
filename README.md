@@ -11,7 +11,7 @@ References:
 1) Calhoun, A.J., Pillow, J.W. & Murthy, M. Unsupervised identification of the internal states that shape natural behavior. Nat Neurosci 22, 2040–2049 (2019).
 2) Escola, S., Fontanini, A., Katz, D. & Paninski, L. Hidden Markov models for the stimulus-response relationships of multistate neural systems. Neural Comput 23, 1071–1132 (2011).
 
-This is the overal structure of the variables of the GLMHMMEstimator class:
+This is the overall structure of the variables of the GLMHMMEstimator class:
 
     Inputs
     ----------
