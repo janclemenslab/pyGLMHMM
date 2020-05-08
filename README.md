@@ -47,7 +47,7 @@ To find the emission and transition matrices of the GLM-HMM model, the [Expectat
 
 ## To Do
 ### Implementation
-- [ ] So far the code was tested and compared with the results of the MATLAB code considering the default options. However, it must be tested and compared with the results of the MATLAB code running with the non-default options too in near future.
+- [ ] So far the code was tested and compared with the results of the MATLAB code considering the default options. However, it must be tested and compared with the results of the MATLAB code running with the non-default options (including the analog emission case) in near future.
 - [ ] Since the code was translated from MATLAB, it is not totally [Pythonic](https://docs.python-guide.org/writing/style/), and this somewhat degrades its efficiency. So one major improvement would be re-writing the code in a more Pythonic way.
 ### Extension
 - [ ] The framework presented here can be extended to include continuous internal states with state-dependent dynamics.
