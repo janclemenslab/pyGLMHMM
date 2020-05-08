@@ -7,7 +7,7 @@ This GLM-HMM model has been developed in ([Calhoun et al., 2019](https://www.nat
 
 ## Getting Started
 ### Installation
-`pip install pyGLMHMM`
+`pip install git+https://github.com/janclemenslab/pyGLMHMM`
 
 ### Instructions on using pyGLMHMM:
 The main module is [`GLMHMM`](https://github.com/janclemenslab/pyGLMHMM/blob/master/src/pyGLMHMM/GLMHMM.py) which follows generally the [scikit-learn estimator](https://scikit-learn.org/stable/developers/develop.html) framework:
