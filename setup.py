@@ -33,7 +33,7 @@ setup(name='pyGLMHMM',
       license='MIT',
       packages=find_packages('src'),
       package_dir={'': 'src'},
-      install_requires=['numpy', 'scipy', 'scikit-learn', 'torch', 'jit'],
+      install_requires=['numpy', 'scipy', 'scikit-learn', 'torch', 'numba'],
       include_package_data=True,
       zip_safe=False
       )
