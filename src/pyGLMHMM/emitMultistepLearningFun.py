@@ -1,9 +1,11 @@
 import numpy as np
 
 from generatePosteriorNStep import _generate_posterior_nstep
+from numba import jit
 from scipy.sparse import spdiags
 from scipy.linalg import block_diag
 
+@jit
 def _emit_multistep_learning_fun(emit_w, stim, state_num, options):    
     # emit_w are the weights that we are learning: in format states x weights
     # stim is a list/dictionary with each stimulus (stim[]['data']) and the probability emission functions (stim[]['gamma'] and stim[]['xi'])

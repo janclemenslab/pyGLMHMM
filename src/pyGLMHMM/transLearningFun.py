@@ -1,9 +1,11 @@
 import copy
 import numpy as np
 
+from numba import jit
 from scipy.sparse import spdiags
 from scipy.linalg import block_diag
 
+@jit
 def _trans_learning_fun(trans_w, stim, state_num, options):    
     # trans_w are the weights that we are learning: in format states x weights
     # stim is a list/dictionary with each stimulus (stim[]['data']) and the probability transition functions (stim[]['gamma'] and stim[]['xi'])

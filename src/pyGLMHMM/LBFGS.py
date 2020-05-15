@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 from copy import deepcopy
 from functools import reduce
+from numba import jit
 from torch.optim import Optimizer
 
 #%% Helper Functions for L-BFGS
@@ -991,6 +992,7 @@ class LBFGS(Optimizer):
     def step(self, p_k, g_Ok, g_Sk=None, options={}):
         return self._step(p_k, g_Ok, g_Sk, options)
     
+    @jit
     def _line_search_armijo_backtrack(self, t, d, f, fr, g, gtd, c1, funObj):
         """
         Implements Matlab Armijo Backtrack line search
@@ -1051,7 +1053,8 @@ class LBFGS(Optimizer):
         self._add_update(t, d)
                 
         return f_new, g_new, t, funEvals, fail
-    
+        
+    @jit
     def _line_search_strong_wolfe(self, t, d, f, g, gtd, c1, c2, max_ls, funObj):
         """
         Implements MATLAB Strong Wolfe line search

@@ -1,6 +1,8 @@
 import copy
 import numpy as np
+from numba import jit
 
+@jit
 def _compute_trial_expectation(prior, likelihood, transition):
     # Forward-backward algorithm, see Rabiner for implementation details
 	# http://www.cs.ubc.ca/~murphyk/Bayes/rabiner.pdf
