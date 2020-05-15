@@ -30,7 +30,7 @@ The main module is [`GLMHMM`](https://github.com/janclemenslab/pyGLMHMM/blob/mas
 Here is a sample code:
 
 ```python
-from GLMHMM import GLMHMMEstimator
+from pyGLMHMM.GLMHMM import GLMHMMEstimator
 estimator = GLMHMMEstimator(num_samples = 5, num_states = 2, num_emissions = 2, num_feedbacks = 3, num_filter_bins = 30, num_steps = 1, filter_offset = 1)
 output = estimator.fit(X, y, [])
 ```
