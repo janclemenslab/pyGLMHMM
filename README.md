@@ -1,3 +1,14 @@
+This port of Adam Calhoun's [matlab implementation](https://github.com/murthylab/GLMHMM) is untested and buggy.
+
+We recommend you use Scott Linderman's awesome [ssm](https://github.com/lindermanlab/ssm). This [example notebook](https://github.com/lindermanlab/ssm/blob/master/notebooks/2b%20Input%20Driven%20Observations%20(GLM-HMM).ipynb) from the ssm package uses input driven observations. The model can be easily modified to include input-driven transitions:
+```python
+true_glmhmm = ssm.HMM(num_states, obs_dim, input_dim, 
+                      observations="input_driven_obs", 
+                      observation_kwargs=dict(C=num_categories),
+                      transitions="inputdriven")
+```
+
+
 # pyGLMHMM
 
 ## What Is It?
